@@ -1,0 +1,30 @@
+
+@import './about/about.scss';
+@import './common/loader.scss';
+@import './header/navigation.scss';
+@import './common/home_slider.scss';
+@import './common/button.scss';
+@import './animation/moving-tiles.scss';
+@import './animation/background-gradiant.scss';
+@import './animation/moving-bg.scss';
+@import './animation/dodecahedron.scss';
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #818181;
+}
+main > section {
+    padding: 70px 0;
+}
+a, a:hover, a:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+@media only screen and (max-width: 767px) {
+
+    body {
+        font-size: 14px;
+    }
+  }
