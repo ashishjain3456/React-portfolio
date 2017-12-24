@@ -1,0 +1,141 @@
+{
+  "about":[{
+    "name":"Ian Enders",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus tempus hendrerit. Maecenas ut libero viverra, lobortis nulla at, mattis lacus. Mauris sed purus vitae ipsum semper eleifend. Vestibulum tempus nisi ut nibh aliquet pellentesque quis sit amet ipsum. Maecenas in elit imperdiet, gravida erat vel, scelerisque massa. ",
+    "pic":"../img/slider/man.png"
+  },{
+    "name":"Ian Enders123",
+    "description":"Integer dapibus tempus hendrerit. Maecenas ut libero viverra, lobortis nulla at, mattis lacus. Mauris sed purus vitae ipsum semper eleifend. Vestibulum tempus nisi ut nibh aliquet pellentesque quis sit amet ipsum. Maecenas in elit imperdiet, gravida erat vel, scelerisque massa. ",
+    "pic":"../img/slider/man.png"
+  }],
+  "projects":[
+    {
+      "title":"project A",
+      "description":"Desc A",
+      "technologies":[
+        {
+          "key":"javascript",
+          "durationMonth":5,
+          "modules":[
+            {
+              "key":"mod1",
+              "durationMonth":2
+            },
+            {
+              "key":"mod2",
+              "durationMonth":1
+            },
+            {
+              "key":"mod3",
+              "durationMonth":3
+            },
+            {
+              "key":"mod4",
+              "durationMonth":4
+            }
+          ]
+        },
+        {
+          "key":"java",
+          "durationMonth":5,
+          "modules":[
+            {
+              "key":"mod8",
+              "durationMonth":2
+            },
+            {
+              "key":"mod9",
+              "durationMonth":1
+            }
+          ]
+        }
+      ],
+      "duration":{
+        "start":"10-2014",
+        "end":"02-2015"
+      },
+      "role":"My Role",
+      "languages":[
+        {
+          "key":"lang1",
+          "title":"lang 1",
+          "durationMonth":5
+        },
+        {
+          "key":"lang2",
+          "title":"lang 2",
+          "durationMonth":3
+        },
+        {
+          "key":"lang3",
+          "title":"lang 3",
+          "durationMonth":4
+        }
+      ]
+    },
+    {
+      "title":"project B",
+      "description":"Desc B",
+      "technologies":[
+        {
+          "key":"javascript",
+          "durationMonth":5,
+          "modules":[
+            {
+              "key":"mod5",
+              "durationMonth":2
+            },
+            {
+              "key":"mod6",
+              "durationMonth":1
+            },
+            {
+              "key":"mod7",
+              "durationMonth":3
+            },
+            {
+              "key":"mod4",
+              "durationMonth":4
+            }
+          ]
+        },
+        {
+          "key":"java",
+          "durationMonth":5,
+          "modules":[
+            {
+              "key":"mod10",
+              "durationMonth":2
+            },
+            {
+              "key":"mod9",
+              "durationMonth":1
+            }
+          ]
+        }
+      ],
+      "duration":{
+        "start":"10-2015",
+        "end":"02-2016"
+      },
+      "role":"My Role2",
+      "languages":[
+        {
+          "key":"lang11",
+          "title":"lang 11",
+          "durationMonth":5
+        },
+        {
+          "key":"lang2",
+          "title":"lang 2",
+          "durationMonth":3
+        },
+        {
+          "key":"lang3",
+          "title":"lang 3",
+          "durationMonth":4
+        }
+      ]
+    }
+  ]
+}

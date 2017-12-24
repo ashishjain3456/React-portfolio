@@ -1,0 +1,81 @@
+{
+  "techs":[
+    {
+      "key":"javascript",
+      "title":"Java Script",
+      "description":" Desc JS"
+    },
+    {
+      "key":"php",
+      "title":"PHP",
+      "description":" Desc PHP"
+    },
+    {
+      "key":"java",
+      "title":"Java",
+      "description":" Desc Java"
+    },
+    {
+      "key":"android",
+      "title":"Android",
+      "description":" Desc Android"
+    },
+    {
+      "key":"python",
+      "title":"Python",
+      "description":" Desc Python"
+    }
+  ],
+  "modules":[
+    {
+      "key":"mod1",
+      "title":"Module 1",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod2",
+      "title":"Module 2",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod3",
+      "title":"Module 3",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod4",
+      "title":"Module 4",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod5",
+      "title":"Module 5",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod6",
+      "title":"Module 6",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod7",
+      "title":"Module 7",
+      "tech":"javascript"
+    },
+    {
+      "key":"mod8",
+      "title":"Module 8",
+      "tech":"java"
+    },
+    {
+      "key":"mod9",
+      "title":"Module 9",
+      "tech":"java"
+    },
+    {
+      "key":"mod10",
+      "title":"Module 10",
+      "tech":"java"
+    }
+  ]
+}
