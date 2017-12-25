@@ -1,22 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from './components/header/header';
+
 class App extends React.Component {
   static get propTypes() {
     return {
-        children: PropTypes.any,
-        onClickOut: PropTypes.func
+      children: PropTypes.any
+    };
+  }
+  static get defaultProps() {
+    return {
+      children: null
     };
   }
 
-  constructor(props) {
-      super(props);
-  }
   render() {
-    console.log("App");
     return (
       <div>
-        <Header/>
+        <Header />
         {this.props.children}
       </div>
     );

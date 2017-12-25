@@ -19,7 +19,7 @@ console.log("Env: ", env);
     },
     devtool: ifProd('source-map', 'eval'),
     devServer: {
-      port: 8082,
+      port: 8083,
       historyApiFallback: true
     },
     module: {

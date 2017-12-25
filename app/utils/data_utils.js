@@ -3,53 +3,41 @@ import techJSON from '../configs/tech.json';
 
 class Profile {
   constructor() {
-    console.log("profileJSON:", profileJSON);
+    console.log('profileJSON:', profileJSON);
+    this.profileJSON = profileJSON;
+    this.techJSON = techJSON;
   }
 
-  about (){
-    return profileJSON.about;
+  about() {
+    return this.profileJSON.about;
   }
 
-  _getTechDetails(techKey){
-    let techs = new Set(techJSON.techs);
-    let filteredTechs = [...techs].filter(e=>e.key == techKey);
-    if(!filteredTechs || filteredTechs.length==0){
-      return;
+  getTechDetails(techKey) {
+    const techs = new Set(this.techJSON.techs);
+    const filteredTechs = [...techs].filter(el => el.key === techKey);
+    if (filteredTechs && filteredTechs.length > 0) {
+      return filteredTechs[0];
     }
-    return filteredTechs[0];
+    return undefined;
   }
-  technologies(){
-    let projects = profileJSON.projects
-    let techKeysArray = new Set();
-    let techArray = new Set();
+  technologies() {
+    const { projects } = this.profileJSON;
+    const techKeysArray = new Set();
+    const techArray = new Set();
 
-    for(let project in projects){
-      if(projects[project].technologies){
-        for(let tech in projects[project].technologies){
-          if(!techKeysArray.has(projects[project].technologies[tech].key)){
-            techKeysArray.add(projects[project].technologies[tech].key)
-            if(this._getTechDetails(projects[project].technologies[tech].key)){
-              techArray.add(this._getTechDetails(projects[project].technologies[tech].key))
+    for (let i = 0; i < projects.length; i += 1) {
+      if (projects[i].technologies) {
+        for (let j = 0; j < projects[i].technologies.length; j += 1) {
+          if (!techKeysArray.has(projects[i].technologies[j].key)) {
+            techKeysArray.add(projects[i].technologies[j].key);
+            if (this.getTechDetails(projects[i].technologies[j].key)) {
+              techArray.add(this.getTechDetails(projects[i].technologies[j].key));
             }
           }
         }
       }
     }
-    console.log("[...techKeysArray]:", [...techArray]);
     return [...techArray];
   }
-  // [Symbol.iterator]() {
-  //     return this;
-  // }
-  // next() {
-  //      this.step++;
-  //     //
-  //     // if (this.step === 1)
-  //     //     return {value: 'Ben'};
-  //     // else if (this.step == 2)
-  //     //     return {value: 'Ilegbodu'};
-  //
-  //     return {done: true};
-  // }
 }
 export default Profile;
